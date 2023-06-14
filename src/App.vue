@@ -1,12 +1,12 @@
 <template>
-<div>
-  <h1>{{ title }}</h1>
-  <p>Welcome...</p>
-  <div v-if="showModal">
-    <Modal :heading="heading" :text="text" theme="sale" @close="toggleModal" />
-  </div>  
-  <button @click="toggleModal">open modal</button>
- </div> 
+  <div>
+    <h1>{{ title }}</h1>
+    <p>Welcome...</p>
+    <div v-if="showModal">
+      <Modal :heading="heading" :text="text" theme="sale" @close="toggleModal" />
+    </div>  
+    <button @click.alt="toggleModal">open modal (alt click)</button>
+  </div>
 </template>
 
 <script>
